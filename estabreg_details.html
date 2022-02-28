@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Board of practical Training(Eastern Region)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+
+    <style type="text/css">
+        #div1,
+        #div2,
+        #div3 {
+            display: none
+        }
+    </style>
+    <script type="text/javascript">
+        function showHide(elem) {
+            if (elem.selectedIndex != 0) {
+                //hide the divs
+                for (var i = 0; i < divsO.length; i++) {
+                    divsO[i].style.display = 'none';
+                }
+                //unhide the selected div
+                document.getElementById('div' + elem.value).style.display = 'block';
+            }
+        }
+
+        window.onload = function() {
+            //get the divs to show/hide
+            divsO = document.getElementById("frmMyform").getElementsByTagName('div');
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Sub Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8">
+                    <!--          <div class="left-content">
+            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
+          </div>-->
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="right-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                          Establishment Registration Form
+                      </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <!--                          <li><a href="meetings.html" class="active">Meetings</a></li>
+                          <li><a href="index.html">Apply Now</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
+                                  <li><a href="meeting-details.html">Meeting Details</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="index.html">Courses</a></li> -->
+                            <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!--  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Get all details</h6>
+          <h2>Online Teaching and Learning Tools</h2>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="meeting-single-item">
+                                <!--                <div class="thumb">
+                  <div class="price">
+                    <span>$14.00</span>
+                  </div>
+                  <div class="date">
+                    <h6>Nov <span>12</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/single-meeting.jpg" alt=""></a>
+                </div>-->
+                                <div class="down-content">
+
+
+                                    <div class="row">
+                                        <form action="estabreg_details.php" method="post" id="frmMyform">
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <h5>1. Corresponding address of the Establishment with Pin Code : </h5> <input type="textarea" placeholder="address" name="address" required> <br><br>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <h5>2. <u>Details of the CEO/MD/Director Name of the Organization :</u></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <b>• Name :</b>
+                                                        <input type="text" placeholder="name" name="ceo_name" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <b>• Email :</b>
+                                                        <input type="email" placeholder="email" name="ceo_email" required>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <h5>3. <u>Details of the HR/ Training in Charge :</u></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <b>• Name :</b>
+                                                        <input type="text" placeholder="name" name="hr_name" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <b>• Email :</b>
+                                                        <input type="email" placeholder="email" name="hr_email" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <b>• Mobile No :</b>
+                                                        <input type="number" placeholder="mobile No." name="mobile" required>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <h5>4. <u>Other Necessary Details :</u></h5>
+                                                    </div>
+                                                </div>
+                                                • Total Manpower as on 31st March 2021 :
+                                                <input type="text" name="total_manpower" required> </br><br> • Number of Training Slots as Notified for NATS :
+                                                <input type="text" name="training_slots" required>
+                                                </br><br> • Total Number of Graduates & Technician Apprenticeship completed their training through NATS in FY 2021-22 :
+                                                <input type="text" name="training_completed" required></br><br> • Number of COP has been initiated for the Apprentices who completed their training in FY 2021-22 :
+                                                <input type="text" name="cop"></br><br>
+
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <h5>5. <u>File Attachment Details :</u></h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        • Manpower Details (in specified format) : <br>Files Submitted : <input type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        • Updated Training Module : <br>Files Submitted : <input type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        • Sample Work Diary(first and last page of Sample Work Diary specified for Apprenticeship training through NATS) : <br>Files Submitted : <input type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        • Details of employment that you offered in FY 2021-22 to Apprentices trained at your establishment(if any) : <br>Files Submitted : <input type="file">
+                                                    </div>
+                                                </div>
+
+
+                                                <b><input type="checkbox">&nbsp;&nbsp;I hereby declare that the above mentioned information is correct to the best of my knowledge.</b>
+
+                                            </div>
+                                            <div class="button">
+                                                <br>
+                                                <button type="submit" class="btn btn-success">Submit</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--            <div class="col-lg-12">
+              <div class="main-button-red">
+                <a href="meetings.html">Back To Meetings List</a>
+              </div>
+            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyright © 2022 BOPT(ER), KOLKATA All Rights Reserved.
+
+            </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+            var
+                direction = section.replace(/#/, ''),
+                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                reqSectionPos = reqSection.offset().top - 0;
+
+            if (isAnimate) {
+                $('body, html').animate({
+                        scrollTop: reqSectionPos
+                    },
+                    800);
+            } else {
+                $('body, html').scrollTop(reqSectionPos);
+            }
+
+        };
+
+        var checkSection = function checkSection() {
+            $('.section').each(function() {
+                var
+                    $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var
+                        currentId = $this.data('section'),
+                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                    reqLink.closest('li').addClass('active').
+                    siblings().removeClass('active');
+                }
+            });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
+            e.preventDefault();
+            showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function() {
+            checkSection();
+        });
+    </script>
+</body>
+
+
+</body>
+
+</html>

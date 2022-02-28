@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Board of practical Training(Eastern Region)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+
+    <style type="text/css">
+        #div1,
+        #div2,
+        #div3 {
+            display: none
+        }
+    </style>
+    <script type="text/javascript">
+    
+    function validateForm()
+        {
+            // var x = document.forms["estabform"]["natsid"].value;
+            var x = document.getElementById('name').value;
+            var value = document.getElementById('natsid').value;
+            var a = document.getElementById('n1').value;
+            var b = document.getElementById('n2').value;
+            var c = document.getElementById('n3').value;
+            var d = document.getElementById('n4').value;
+            var e = document.getElementById('n5').value;
+            var f = document.getElementById('nat1').value;
+            var g = document.getElementById('nat2').value;
+            var h = document.getElementById('nat3').value;
+            var i = document.getElementById('nat4').value;
+            var j = document.getElementById('nat5').value;
+            var k = document.getElementById('c1').value;
+            var l = document.getElementById('c2').value;
+            var m = document.getElementById('c3').value;
+            var n = document.getElementById('c4').value;
+            var o = document.getElementById('c5').value;
+            
+            if (x == "" || x == null) 
+            {
+                alert("Name of the insitute must be filled out");
+                return false;
+            }
+            if(value=="")
+            {
+                alert("natsid cannot be empty");
+                return false;
+            }
+            if(value.length!=12)
+            {
+                alert("Please enter your registered twelve digit natsid");
+                return false;
+            }
+            if(a=="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(b=="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(c=="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(c=="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(d=="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(e="")
+            {
+                alert("Please Enter your name");
+                return false;
+            }
+            if(f.length!=16)
+            {
+                alert("Please your sixteen digit natsid");
+                return false;
+            }
+            if(g.length!=16)
+            {
+                alert("Please your sixteen digit natsid");
+                return false;
+            }
+            if(h.length!=16)
+            {
+                alert("Please your sixteen digit natsid");
+                return false;
+            }
+            if(i.length!=16)
+            {
+                alert("Please your sixteen digit natsid");
+                return false;
+            }
+            if(j.length!=16)
+            {
+                alert("Please your sixteen digit natsid");
+                return false;
+            }
+            if(k=="")
+            {
+                alert("Please enter you company name");
+                return false;
+            }
+            if(l=="")
+            {
+                alert("Please enter you company name");
+                return false;
+            }
+            if(m=="")
+            {
+                alert("Please enter you company name");
+                return false;
+            }
+            if(n="")
+            {
+                alert("Please enter you company name");
+                return false;
+            }
+            if(o=="")
+            {
+                alert("Please enter you company name");
+                return false;
+            }
+            
+        }
+    
+        function showHide(elem) {
+            if (elem.selectedIndex != 0) {
+                //hide the divs
+                for (var i = 0; i < divsO.length; i++) {
+                    divsO[i].style.display = 'none';
+                }
+                //unhide the selected div
+                document.getElementById('div' + elem.value).style.display = 'block';
+            }
+        }
+
+        window.onload = function() {
+            //get the divs to show/hide
+            divsO = document.getElementById("frmMyform").getElementsByTagName('div');
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Sub Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8">
+                    <!--          <div class="left-content">
+            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
+          </div>-->
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="right-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+              Institute Registration Form
+            </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <!--                          <li><a href="meetings.html" class="active">Meetings</a></li>
+                          <li><a href="index.html">Apply Now</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
+                                  <li><a href="meeting-details.html">Meeting Details</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="index.html">Courses</a></li> -->
+                            <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!--  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Get all details</h6>
+          <h2>Online Teaching and Learning Tools</h2>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="meeting-single-item">
+                                <!--                <div class="thumb">
+                  <div class="price">
+                    <span>$14.00</span>
+                  </div>
+                  <div class="date">
+                    <h6>Nov <span>12</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/single-meeting.jpg" alt=""></a>
+                </div>-->
+                                <div class="down-content">
+
+
+                                    <div class="row">
+
+
+                                        <h3><u>Check Eligibility</u></h3>
+                                        <form action="contact3.php" method="post" id="form1" name="instregform">
+                                            Name of the Institute :&nbsp;<input type="text" id="name" maxlength="50" name="instname" placeholder="Institution Name"><br><br> NATS Id :&nbsp;<input type="text" id="natsid" maxlength="12" name="natsid" placeholder="Institution NATS ID"><br>
+                                            <input type="checkbox" required> We have updated our Institute profile in NATS Portal <br>
+                                            <input type="checkbox" required>At least 5 number of Students of our Institute have engaged for Apprenticeship Training in different Establishment in last FY 2021-22
+                                            <table>
+                                                <tr>
+                                                    <th>Name of the Student</th>
+                                                    <th>NATS ID</th>
+                                                    <th>Company Name</th>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="n1" name="n1" placeholder="Student Name"></td>
+                                                    <td><input type="text" id="nat1" name="nat1" maxlength="16" placeholder="NATS ID" ></td>
+                                                    <td><input type="text" id="c1" name="c1" placeholder="Company Name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="n2" name="n2" placeholder="Student Name"></td>
+                                                    <td><input type="text" id="nat2" name="nat2" maxlength="16" placeholder="NATS ID"></td>
+                                                    <td><input type="text" id="c2" name="c2" placeholder="Company Name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="n3" name="n3" placeholder="Student Name"></td>
+                                                    <td><input type="text" id="nat3" name="nat3" maxlength="16" placeholder="NATS ID"></td>
+                                                    <td><input type="text" id="c3" name="c3" placeholder="Company Name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="n4" name="n4" placeholder="Student Name"></td>
+                                                    <td><input type="text" id="nat4" name="nat4" maxlength="16" placeholder="NATS ID"></td>
+                                                    <td><input type="text" id="c4" name="c4" placeholder="Comapny Name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="n5" name="n5" placeholder="Student Name"></td>
+                                                    <td><input type="text" id="nat5" name="nat5" maxlength="16" placeholder="NATS ID"></td>
+                                                    <td><input type="text" id="c5" name="c5" placeholder="Company Name"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        
+                                                         <input type="submit" name="submit" onclick="return validateForm()"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </form>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!--            <div class="col-lg-12">
+              <div class="main-button-red">
+                <a href="meetings.html">Back To Meetings List</a>
+              </div>
+            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyright © 2022 BOPT(ER), KOLKATA All Rights Reserved.
+
+            </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+            var
+                direction = section.replace(/#/, ''),
+                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                reqSectionPos = reqSection.offset().top - 0;
+
+            if (isAnimate) {
+                $('body, html').animate({
+                        scrollTop: reqSectionPos
+                    },
+                    800);
+            } else {
+                $('body, html').scrollTop(reqSectionPos);
+            }
+
+        };
+
+        var checkSection = function checkSection() {
+            $('.section').each(function() {
+                var
+                    $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var
+                        currentId = $this.data('section'),
+                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                    reqLink.closest('li').addClass('active').
+                    siblings().removeClass('active');
+                }
+            });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
+            e.preventDefault();
+            showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function() {
+            checkSection();
+        });
+    </script>
+</body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Board of practical Training(Eastern Region)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+</head>
+
+<body>
+
+
+
+    <!-- Sub Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8">
+                    <!--          <div class="left-content">
+            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
+          </div>-->
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="right-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Establishment Registration Form
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meeting-single-item">
+
+                        <div class="down-content">
+
+
+                            <div class="row">
+
+                                <form name="estabreg" method="post" action="contact4.php" oninput=" validateForm()">
+                                    <h3><u>Check Eligibility</u></h3>
+                                    <br><b>Name of the Establishment :</b>&nbsp; <input type="text" id="name" name="name" maxlength="50" placeholder="Establishment Name"><br>
+
+                                    <p id="name_error" style="color:red"></p>
+
+                                    <br><b>NATS ID :</b>&nbsp; <input type="text" id="natsid" name="natsid" maxlength="12" placeholder="Establishment NATS ID"><br><br>
+
+                                    <p id="natsid_error" style="color:red"></p>
+
+                                    <b><input type="checkbox" required> We are engaging 2.5% of total manpower strength as apprentices in last Four(4) Financial year</b> <br><br>
+
+                                    <table>
+                                        <tr>
+                                            <th>Financial Year</th>
+                                            <th>&nbsp; &nbsp;Total Manpower</th>
+                                            <th>Engaging Apprentices</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-2019</td>
+                                            <td><input type="number" name="manpower1" id="manpower19"></td>
+                                            <td><input type="number" name="enApp1" id="enApp19"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-2020</td>
+                                            <td><input type="number" name="manpower2" id="manpower20"></td>
+                                            <td><input type="number" name="enApp2" id="enApp20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2020-2021</td>
+                                            <td><input type="number" name="manpower3" id="manpower21"></td>
+                                            <td><input type="number" name="enApp3" id="enApp21"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2021-2022</td>
+                                            <td><input type="number" name="manpower4" id="manpower22"></td>
+                                            <td><input type="number" name="enApp4" id="enApp22"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p id="manpower_error" style="color:red"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <input type="submit" name="Submit" id="Submit" value="Register" class="btn btn-primary btn-lg">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2022 BOPT(ER), KOLKATA All Rights Reserved.
+
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript">
+        validation
+
+        function validateForm() {
+            var manpower19 = document.forms["estabreg"]["manpower1"];
+            var manpower20 = document.forms["estabreg"]["manpower2"];
+            var manpower21 = document.forms["estabreg"]["manpower3"];
+            var manpower22 = document.forms["estabreg"]["manpower4"];
+
+            var enApp19 = document.forms["estabreg"]["enApp1"];
+            var enApp20 = document.forms["estabreg"]["enApp2"];
+            var enApp21 = document.forms["estabreg"]["enApp3"];
+            var enApp22 = document.forms["estabreg"]["enApp4"];
+
+            var estabname = document.forms["estabreg"]["name"];
+            var natsid = document.forms["estabreg"]["natsid"];
+
+            var check19 = (parseInt((manpower19.value * 2.44) / 100));
+            console.log(`this is input ${enApp19.value}`);
+            var check20 = (parseInt((manpower20.value * 2.44) / 100));
+            var check21 = (parseInt((manpower21.value * 2.44) / 100));
+            var check22 = (parseInt((manpower22.value * 2.44) / 100));
+
+            // Validation
+
+            if (estabname.value !== "") {
+                document.getElementById("name_error").innerText = ""
+                document.forms["estabreg"]["Submit"].disabled = false
+            } else {
+                document.forms["estabreg"]["Submit"].disabled = true
+                document.getElementById("name_error").innerText = "Please Enter Your Name"
+                return;
+            }
+
+            if (natsid.value.length == 12) {
+                document.getElementById("natsid_error").innerText = ""
+                document.forms["estabreg"]["Submit"].disabled = false
+            } else {
+                document.forms["estabreg"]["Submit"].disabled = true
+                document.getElementById("natsid_error").innerText = "Enter Valid ID"
+                return;
+            }
+
+            if (check19 < enApp19.value && check20 < enApp20.value && check21 < enApp21.value && check22 < enApp22.value) {
+                document.getElementById("manpower_error").innerText = ""
+                document.forms["estabreg"]["Submit"].disabled = false
+            } else {
+                document.forms["estabreg"]["Submit"].disabled = true
+                document.getElementById("manpower_error").innerText = "You are not eligible"
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

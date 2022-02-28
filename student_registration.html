@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BOPT | Student Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-responsive.css">-->
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo"> Regional Apprenticeship Day 2022 </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section">
+                                <a href="#top" class="active">Home</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#apply">Apply Now</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#courses">Courses</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meeting-single-item">
+                        <div class="down-content">
+                            <form name="student_registration" method="post" action="contact.php" oninput=" validateForm()">
+                                <h2>Check Eligibility</h2>
+                                <hr />
+                                <div>
+                                    <label>I have completed apprenticeship training in FY 2021-22. I have NATS
+                                        ID <input maxlength="16" type="text" name="natsid" class="mr-sm-2" placeholder="NATS ID"></input> I
+                                        have
+                                        certificate of Proficiency. </label>
+                                </div>
+                                <p id="natsid_error" style="color:red"></p>
+                                <div class="form-row">
+                                    <div class="col-md-5 mb-4">
+                                        <label>Number of technical skill assign in ACRC Form:</label>
+                                        <select id="techSkill" class="form-control">
+                                            <option value="N">Choose Option</option>
+                                            <option value="X">Technical Skill 1</option>
+                                            <option value="Y">Technical Skill 2</option>
+                                            <option value="Z">Technical Skill 3</option>
+                                        </select>
+                                    </div>
+<br>
+                                    <div class="col-md-5 mb-4" id="techBox1" style="display: none">
+                                        <label><br></label>
+                                        <input type="number" id="techBox1" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 1 Here" width="60"/>
+                                    <br>
+                                    </div>
+                                    
+                                    
+                                     <div class="col-md-5 mb-4" id="techBox2" style="display: none">
+                                        <label><br></label>
+                                        <input type="number" id="techBox2" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 1 Here" width="60"/>
+                                        <br>
+                                        <input type="number" id="techBox2" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 2 Here" width="60"/>
+                                        <br>
+                                    </div>
+                                    
+                                     <div class="col-md-5 mb-4" id="techBox3" style="display: none">
+                                        <label><br></label>
+                                        <br>
+                                        <input type="number" id="techBox3" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 1 Here" width="60"/>
+                                        <br>
+                                        <input type="number" id="techBox3" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 2 Here" width="60"/>
+                                        <br>
+                                        <input type="number" id="techBox3" name="sellMyList" class="form-control" placeholder="Enter Your Technical Skill 3 Here" width="60"/>
+                                        <br>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <p id="tech_error" style="color:red"></p>
+                                </div>
+                                <div>
+                                    <label>Marks of GENERAL ATTRIBUTES:</label>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Communication
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="comSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Communication Skill">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Leadership
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="leadSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Leadership Skill">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Multi-tasking
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="mulSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Multi-tasking Skill">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Time Management
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="timeSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Time Management Skill">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Analytical
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="analSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Analytical Skill">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Positive
+                                            Skill:</span>
+                                    </div>
+                                    <input type="number" name="posiSk" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Your Positive Skill">
+                                </div>
+                                <div class="form-row">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-default">I have
+                                                maintain attendance:</span>
+                                        </div>
+                                        <select class="form-control" id="att" name="att">
+                                            <option value="0">Select an option</option>
+                                            <option value="70">Below 70%</option>
+                                            <option value="80">70%-80%</option>
+                                            <option value="90">81%-90%</option>
+                                            <option value="100">91%-100%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </br>
+                                <div class="form-inline">
+                                    <label>I have completed GADP Training by
+                                        BOPT(ER), Kolkata.
+                                        Certificate/
+                                        Batch No: &nbsp; <input type=" text" name="batch" class="form-control" placeholder="">
+                                        </input>
+                                    </label>
+                                </div>
+                                </br>
+                                <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                    <input type="checkbox" required> &nbsp;I have valid work diary maintain during Apprenticeship Training.
+                                </div>
+                                </div>
+                                <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                    <input type="checkbox" required> &nbsp;I have received my Certificatate of Proficiency(COP)generated through NATS portal
+                                </div>
+                                </div>
+                                <p id="form_error" style="color:red"></p>
+                                <div>
+                                    <input type="submit" name="Submit" id="Submit" value="Register" class="btn btn-primary btn-lg">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   
+    <script type="text/javascript">
+        $(function() {
+            $("#techSkill").change(function() {
+                if ($(this).val() == "X") {
+                    $("#techBox1").show();
+                } else {
+                    $("#techBox1").hide();
+                }
+            });
+        });
+        
+        $(function() {
+            $("#techSkill").change(function() {
+                if ($(this).val() == "Y") {
+                    $("#techBox2").show();
+                } else {
+                    $("#techBox2").hide();
+                }
+            });
+        });
+        
+
+        $(function() {
+            $("#techSkill").change(function() {
+                if ($(this).val() == "Z") {
+                    $("#techBox3").show();
+                } else {
+                    $("#techBox3").hide();
+                }
+            });
+        });
+        
+        
+        // validation
+
+        function validateForm() {
+            var natsid = document.forms["student_registration"]["natsid"];
+            var techBox1 = document.forms["student_registration"]["techBox1"];
+            var techBox2 = document.forms["student_registration"]["techBox2"];
+            var techBox3 = document.forms["student_registration"]["techBox3"];
+            var comSk = document.forms["student_registration"]["comSk"];
+            var leadSk = document.forms["student_registration"]["leadSk"];
+            var mulSk = document.forms["student_registration"]["mulSk"];
+            var timeSk = document.forms["student_registration"]["timeSk"];
+            var analSk = document.forms["student_registration"]["analSk"];
+            var posiSk = document.forms["student_registration"]["posiSk"];
+            var att = document.forms["student_registration"]["att"];
+            var batch = document.forms["student_registration"]["batch"];
+
+            var avg = (parseInt(comSk.value) + parseInt(leadSk.value) + parseInt(mulSk.value) + parseInt(timeSk.value) + parseInt(analSk.value) + parseInt(posiSk.value)) / 9;
+            console.log(avg)
+            if (natsid.value == "") 
+            {
+                document.getElementById("natsid_error").innerText = "Please enter your Registered NATS ID";
+                return;
+            }
+            if (natsid.value.length != 16) {
+                document.getElementById("natsid_error").innerText = "Please enter your Registered Sixteen Digit NATS ID";
+                return;
+            }
+            document.getElementById("natsid_error").innerText = "";
+
+            if (techBox1.value < 8) {
+                document.getElementById("tech_error").innerText = "You are not Eligible";
+                document.forms["student_registration"]["Submit"].disabled = true
+                return;
+            }
+            if (techBox2.value < 8) {
+                document.getElementById("tech_error").innerText = "You are not Eligible";
+                document.forms["student_registration"]["Submit"].disabled = true
+                return;
+            }
+            if (techBox3.value < 8) {
+                document.getElementById("tech_error").innerText = "You are not Eligible";
+                document.forms["student_registration"]["Submit"].disabled = true
+                return;
+            }
+            
+
+
+
+            if (avg > 8) {
+                document.getElementById("form_error").innerText = ""
+                document.forms["student_registration"]["Submit"].disabled = false
+            } else {
+                document.forms["student_registration"]["Submit"].disabled = true
+                document.getElementById("form_error").innerText = "You are not Eligible"
+                return;
+            }
+            if (parseInt(att.value) < 80) {
+                document.getElementById("form_error").innerText = "You are not Eligible";
+                document.forms["student_registration"]["Submit"].disabled = true
+                return;
+            } else {
+                document.getElementById("form_error").innerText = ""
+                document.forms["student_registration"]["Submit"].disabled = false
+            }
+        }
+    </script>
+</body>
+
+</html>
